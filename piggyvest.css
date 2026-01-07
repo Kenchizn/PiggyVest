@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #f2f7f8;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #0c1926;
+    height: 100vh;
+}
+body a{
+    color: #0c1926;
+    text-decoration: none;
+}
+nav{
+    background-color: #f2f7f8 !important;
+    height: 100px;
+    padding: 100px;
+    margin-bottom: 200px;
+    animation: scroll-transition;
+    animation-timeline: scroll(y);
+    /* position: sticky;
+    top: 0;
+    z-index: 1; */
+}
+@keyframes scroll-transition {
+    0% {
+        background-color: white;
+    }
+    0.1% {
+        background-color: white;
+    }
+    100% {
+        background-color: white;
+    }
+
+}
+.nav-link{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #0c1926 !important;
+}
+.navbar.scrolled {
+    background-color: whitesmoke !important;
+}
+#Sign-In{
+    background-color: transparent;
+    color: #0c1825;
+    border-color: #0c1825;
+}
+#Account{
+    background-color: #0c1825;
+    color: white;
+}
+.close{
+    display: flex;
+}
+.dropdown:hover>.dropdown-menu{
+    display: grid;
+    height: 250px;
+    grid-template-columns: 1fr 1fr;
+}
+.dropdown-menu{
+    background-color: solid #f2f7f8;
+    display: none;
+    gap: 10px;
+    padding: 20px 20px;
+}
+.dropdown-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.dropdown-item img{
+    width: 50px;
+}
+@media (max-width: 991px) {
+    .Bar {
+        background-color: #f2f7f8;
+        width: 100%;
+        align-items: center;
+    }
+    .close{
+        display: flex;
+       flex-direction: column;
+    }
+    .offcanvas-header{
+        display: flex;
+
+    }
+    .dropdown:hover>.dropdown-menu{
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .offcanvas-body{
+        height: max-content;
+    }
+}
+#Savings:hover{
+    background-color: #0c1926 !important;
+    color: white;
+}
+section{
+    margin-top: 200px !important;
+}
+.popup{
+    animation: popup 1s ease 0.5s;
+    animation-timeline: view();
+    animation-range: entry 0 cover 20%;
+}
+.popup:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.popup:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.popup:nth-child(3) {
+    animation-delay: 0.6s;
+}
+@keyframes popup {
+    from {
+        scale: 0.3;
+        transform: scaleX(0);
+    }
+    to {
+        scale: 1;
+        transform: scaleX(20px);
+    }
+}
+/* .file{
+
+} */
+#iPhone{
+    background-color: #0c1926;
+    transition: transform 0.5s ease 0s;
+}
+#iPhone:hover{
+    background-color: black;
+    color: white;
+
+    transform: translateY(-10px);
+}
+#Android{
+    background-color: #0c1926;
+    transition: transform 0.5s ease 0s;
+}
+#Android:hover{
+    background-color: black;
+    color: white;
+
+    transform: translateY(-10px);
+}
+.bounce{
+    position: relative;
+    opacity: 1;
+    animation: bounce 3s ease infinite 1.5s;
+}
+@keyframes  bounce{
+    0%{
+       transform: translateY(0px);
+    }
+
+    50%{
+       transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+#img1{
+    top: 50px;
+    left: 0px;
+    width: 30%;
+    position: absolute;
+    object-fit: contain;
+    opacity: 1;
+}
+#img2{
+    top: 20px;
+    right: -10px;
+    width: 30%;
+    position: absolute;
+    object-fit: contain;
+}
+#img3{
+    top: 200px;
+    left: 0px;
+    width: 30%;
+    position: absolute;
+    object-fit: contain;
+}
+#img4{
+    bottom: 200px;
+    right: -10px;
+    width: 30%;
+    position: absolute;
+    object-fit: contain;
+}
+#img5{
+    bottom: 100px;
+    left: 0px;
+    width: 30%;
+    position: absolute;
+    object-fit: contain;
+}
+#img6{
+    bottom: -20px;
+    right: -10px;
+    width: 30%;
+    position: absolute;
+    object-fit: contain;
+}
+.card{
+    border-radius: 20px;
+    /* padding: 20px; */
+    overflow: hidden;
+    position: relative;
+    height: 70vh;
+}
+.card-img{
+    object-fit: contain;
+    position: absolute;
+    width: 50%;
+    right: -275px;
+    bottom: -200px;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1);
+    right: 20px;
+    bottom: 0;
+}
+#card{
+    background-color: #7913e5;
+    color: white;
+    border-radius: 30px;
+    padding: 40px 50px 0 40px;
+    margin-bottom: 100px;
+}
+
+.card-body a{
+    text-decoration: none;
+}
+
+.Savings:hover{
+    color: white;
+    background-color: #0f60d6;
+}
+.Savings h5, .Savings a{
+    color: #0f60d6;
+}
+.Savings:hover h5, .Savings:hover a{
+    color: white;
+}
+
+
+.Fixed:hover{
+    color: white;
+    background-color: #2295f2;
+}
+.Fixed h5, .Fixed a{
+    color: #2295f2;
+}
+.Fixed:hover h5, .Fixed:hover a{
+    color: white;
+}
+.Goal:hover{
+    background-color: #39c277;
+    color: white;
+}
+.Goal h5, .Goal a{
+    color: #39c277;
+}
+.Goal:hover h5, .Goal:hover a{
+    color: white;
+}
+.Emergency:hover{
+    color: white;
+    background-color: #e5489b;
+}
+.Emergency h5, .Emergency a{
+    color: #e5489b;
+}
+.Emergency:hover h5, .Emergency:hover a{
+    color: white;
+}
+
+.Dollar:hover{
+    background-color:#0c1825;
+    color: white;
+}
+.Dollar a{
+    color: #0c1825;
+}
+.Dollar:hover a{
+    color: white;
+}
+.HouseMoney:hover{
+    background-color: #ff783c;
+    color: white;
+}
+.HouseMoney h5, .HouseMoney a{
+    color: #ff783c;
+}
+.HouseMoney:hover a, .HouseMoney:hover h5{
+    color: white;
+}
+.testimonial{
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    position: relative;
+    border-color: #0c1926;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 10px 10px 0 10px;
+}
+.Infinite-Scroll{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: scrollList 20s linear infinite;
+}
+@keyframes scrollList {
+    0%{ transform: translateY(0);}
+    100% { transform: translateY(-50%);
+}
+}
+.box-pointer{
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+.Ezinne{
+    height: 35px;
+    width: 35px;
+    object-fit: contain;
+}
+
+#iPhone1{
+    background-color: transparent;
+    transition: transform 0.5s ease 0s;
+}
+#iPhone1:hover{
+    background-color: transparent;
+    color: #0c1926;
+
+    transform: translateY(-10px);
+}
+#Android1{
+    background-color: transparent;
+    transition: transform 0.5s ease 0s;
+}
+#Android1:hover{
+    background-color: transparent;
+    color: #0c1926;
+
+    transform: translateY(-10px);
+}
+
+#Earn{
+    animation: fade-up 1s ease-in 0.5s;
+}
+
+#Diverse{
+    animation: fade-up both;
+    animation-timeline: view();
+    animation-range: entry 0 cover 10%;
+}
+#featured{
+    animation: fade-up ease-in;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
+}
+@keyframes  fade-up{
+    from{
+        opacity: 0;
+        scale: 0.3;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0px);
+    }
+}
+
+.slide-in{
+    animation: slide-in both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 50%;
+}
+
+.slide-in:nth-child(1) {
+    animation-delay: 0s;
+}
+.slide-in:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.slide-in:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.slide-in:nth-child(4) {
+    animation-delay: 0.9s;
+}
+.slide-in:nth-child(5) {
+    animation-delay: 1.2s;
+}
+.slide-in:nth-child(6) {
+    animation-delay: 1.5s;
+}
+
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(50px);
+    }
+}
+
+footer a{
+    text-decoration: none;
+    color: #0c1926;
+    text-align: justify;
+    font-weight: lighter;
+    margin-top: 5px;
+}
+footer a:hover{
+    color: blue;
+}
