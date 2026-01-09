@@ -111,6 +111,13 @@ nav{
         justify-items: center;
         align-items: center;
     }
+    .Report{
+        align-content: center;
+    }
+    .lol{
+        width: 100%;
+        height: 100%;
+    }
 }
 #Savings:hover{
     background-color: #0c1926 !important;
@@ -270,7 +277,6 @@ section{
 .Savings:hover h5, .Savings:hover a{
     color: white;
 }
-
 
 .Fixed:hover{
     color: white;
