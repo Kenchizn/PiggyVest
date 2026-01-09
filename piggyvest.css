@@ -76,6 +76,9 @@ nav{
 .dropdown-item img{
     width: 50px;
 }
+.pictures{
+    margin-top: 70px;
+}
 @media (max-width: 991px) {
     .Bar {
         background-color: #f2f7f8;
@@ -97,6 +100,16 @@ nav{
     }
     .offcanvas-body{
         height: max-content;
+    }
+    .pictures{
+        margin-top: 70px;
+    }
+    .hello{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        justify-items: center;
+        align-items: center;
     }
 }
 #Savings:hover{
