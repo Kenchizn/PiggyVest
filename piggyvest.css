@@ -347,6 +347,9 @@ section{
     gap: 10px;
     animation: scrollList 20s linear infinite;
 }
+.Infinite-Scroll:hover{
+    animation-play-state: paused;
+}
 @keyframes scrollList {
     0%{ transform: translateY(0);}
     100% { transform: translateY(-50%);
